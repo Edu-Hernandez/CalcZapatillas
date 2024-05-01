@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#179FC1"
+    android:foregroundTint="#983333"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FD070707"
+        android:padding="16dp"
+        android:text="Venta de zapatillas"
+        android:textColor="#8B21E8E8"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttitulo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Seleccionar Marca"
+        android:textColor="#28DF08"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnmarca"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="#7228DF08"
+        android:entries="@array/marca"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnmarca"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:text="Seleccionar Talla"
+        android:textColor="#0288D1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spntalla"
+        android:layout_width="383dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
+        android:background="#7208A2DF"
+        android:entries="@array/talla"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spntalla"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:text="Cantidad de unidades de Zapatillas"
+        android:textColor="#E64A19"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtnumpares"
+        android:layout_width="382dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textView4"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="#C54821"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnumpares"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/boton_personalizado"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#689F38"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
+
